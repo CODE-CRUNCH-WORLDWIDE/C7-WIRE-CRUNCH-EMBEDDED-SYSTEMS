@@ -4,6 +4,8 @@
 - **Week Dates:** January 6, 2025 - January 10, 2025
 - **Unit:** Week 0 - Overview of C7
 - **Link to Slides:** [Programming Basics Slides](https://docs.google.com)
+- **Link to tinkercad:** [tinkercad.com/joinclass](https://www.tinkercad.com/joinclass)
+
 
 ---
 
