@@ -9,25 +9,57 @@
 
 Sample text for instructions
 
-### **Commands: Terminal**
-```bash
-# List files in the current directory
-ls
+### **Sample Code: C**
+```c
+#include <stdio.h>
 
-# Change directory
-cd /path/to/directory
+// C++ code
+//
 
-# Create a new directory
-mkdir new_directory
+#define RED_PIN 9
+#define BLUE_PIN 10
+#define GREEN_PIN 11
 
-# Remove a file
-rm file_name.txt
+void setup()
+{
+  pinMode(RED_PIN, OUTPUT);
+  pinMode(BLUE_PIN, OUTPUT);
+  pinMode(GREEN_PIN, OUTPUT);
+ 
+}
 
-# Check current working directory
-pwd
+int red;
+int blue;
+int green;
 
-# Print content of a file
-cat file_name.txt
+void loop()
+{
+  red = 255;
+  blue = 0;
+  green = 0;
+  for(int i = 0; i <= 255; i+=5){
+    digitalWrite(RED_PIN, red-i);
+    digitalWrite(BLUE_PIN, blue);
 
-# Display disk space usage
-df -h
+  }
+
+  red=0;
+  blue = 255;
+  green = 0;
+  for(int i = 0; i <= 255; i += 5){
+    digitalWrite(BLUE_PIN, blue-i);
+    digitalWrite(GREEN_PIN, green);
+
+  }
+
+  red = 0; 
+  blue = 0;
+  green = 255;
+  for(int i = 0; i <= 255; i +=5){
+    digitalWrite(GREEN_PIN, green -i);
+    digitalWrite(RED_PIN, red);
+
+  }
+
+}
+```
